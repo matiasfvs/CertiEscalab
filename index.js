@@ -48,6 +48,7 @@ if(user.value==="admin" && password.value ==="123"){
 })
 
 
+
 rockBtn.addEventListener("click", ()=>{
     juego(ROCK,imgRock)
     countsGames = countsGames+1
