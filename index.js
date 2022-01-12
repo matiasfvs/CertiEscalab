@@ -100,6 +100,7 @@ if(iaOption === 0){
     machineImg.src = "img/" + imgScissors + ".svg";
 }//-> Termina if
 
+
 sumResult(userOption,iaOption)
 }
 
@@ -135,7 +136,7 @@ if(countsGames === juegoTerminado){
     console.log(valuesHist)
     parcialResult = totalScore
     resultText.innerHTML = "Resultados Historicos: " + JSON.stringify(valuesHist) //--> muestro los ultimos resultados 
-    parcialText.innerHTML = "Resultado de juego actual: " + parcialResult
+    parcialText.innerHTML = "Resultado ultimo juego: " + parcialResult
     addPila(totalScore)
     totalScore = 0
     countsGames = 0
@@ -148,6 +149,7 @@ function exit(){
     localStorage.removeItem("storageHist")
     location.reload();
 }
+
 
 
 
