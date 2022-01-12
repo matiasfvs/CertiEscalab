@@ -39,6 +39,8 @@ if(user.value==="admin" && password.value ==="123"){
     alert("Bienvenido puedes jugar!")
     desactiveLogin.style.display = "none"
     activateGame.style.display="block"
+}else if (user.value==="" || password.value ===""){
+    alert("Debe completar todos los campos")
 }else{
     alert("Ingrese Usuario o Contraseña correcto")
 
